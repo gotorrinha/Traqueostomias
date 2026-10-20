@@ -1,0 +1,101 @@
+---
+title: "Traqueostomias"
+subtitle: "em desmame ventilatório"
+
+author:
+  - name: "Gonçalo Torrinha, MD"
+    affiliations:
+      - name: "Serviço de Medicina Intensiva, Hospital de Braga"
+      - name: "Escola de Medicina, Universidade do Minho"
+---
+
+## Porque é que mantemos doentes ventilados?
+
+| Classificação  | ICC | WIND |
+|-|---|---|
+| Grupo NW/0 | - | Desmame não tentado |
+| Grupo 1 | "Simples": sucesso após primeiro SBT | "Curto": sucesso ou morte em < 24h |
+| Grupo 2 | "Difícil": ≤ 3 SBTs + < 7 dias | "Difícil": sucesso ou morte entre 1 a 7 dias |
+| Grupo 3 | "Prolongado": > 3 SBTs ou > 7 dias | "Prolongado": insucesso ou morte >7 dias *após primeira tentativa* |
+
+: Classificações ICC e WIND de desmame ventilatório, adaptado[^table1] {.striped .hover}
+
+[^table1]: Dolinay et al. Journal of Clinical Medicine 2024. DOI: 10.3390/jcm13071909
+
+## Porque é que mantemos doentes ventilados?
+
+- Dois grandes grupos de falência de Desmame:
+
+  ::: {.incremental}
+  1. Falência Ventilatória
+  2. Falência de Via Aérea e de estímulo ventilatório
+  :::
+
+## Porque é que mantemos doentes ventilados?
+
+1. ...por Falência Ventilatória
+
+   ::: {.incremental}
+   - Grupos 2 e 3[^Ghiani]: associados a fadiga de músculos respiratórios, esforço respiratório aumentado e patologia sistémica. [^shah]
+   :::
+
+
+[^shah]: Shah et al. Breathe 2024. DOI: 10.1183/20734735.0122-2024
+[^Ghiani]: Ghiani et al. BMC Pulmonary Medicine 2026. DOI: 10.1186/s12890-026-04252-9
+
+## Porque é que mantemos doentes ventilados?
+
+2. ...por Falência de Via Aérea e de estímulo ventilatório
+
+   ::: {.incremental}
+   - Grupo NW/0: pulmões "intactos", mas ausência de proteção de via aérea ou colaboração neurológica em SBT [^Dziewas]
+   - **Falência de Extubação** (<48 a 72h): 14 a 18% das extubações planeadas, tipicamente no contexto de obstrução de VA, tosse ineficaz ou carga elevada de secreções [^medrinal]
+   :::
+
+[^medrinal]: Medrinal et al. Annals of Intensive Care 2026. DOI: 10.1016/j.aicoj.2026.100045
+[^Dziewas]: Dziewas et al. Neurological Research and Practice 2025. DOI: 10.1186/s42466-025-00376-1
+
+## Morbi-mortalidade do desmame ventilatório[^shah]^,^[^Ghiani]^,^[^Alghamdi]^,^[^medrinal]^,^[^Dziewas]
+
+::: {.incremental}
+- Prevalência:
+  - Ventilação: 20 a 31% da generalidade dos doentes críticos
+  - Via aérea/estímulo ventilatório: 14 a 18% na generalidade dos doentes, mas 15% a 47% dos doentes neurocríticos
+
+- Mortalidade:
+  - Falência de desmame: entre 24 a 39%, a 12 meses 40 a 75%
+  - Falência de extubação associada a >2x mortalidade
+
+- LOS (mediana): 22 a 25 dias em SMI, 45 a 51 dias no Hospital.
+:::
+
+[^shah]: Shah et al. Breathe 2024. DOI: 10.1183/20734735.0122-2024
+[^Ghiani]: Ghiani et al. BMC Pulmonary Medicine 2026. DOI: 10.1186/s12890-026-04252-9
+[^Alghamdi]: Alghamdi et al. The Egyptian Journal of Bronchology 2026. DOI:10.1186/s43168-026-00521-7
+[^medrinal]: Medrinal et al. Annals of Intensive Care 2026. DOI: 10.1016/j.aicoj.2026.100045
+[^Dziewas]: Dziewas et al. Neurological Research and Practice 2025. DOI: 10.1186/s42466-025-00376-1
+
+::: {.notes}
+- 50% dos sobreviventes permanece com dependência de assistência ventilatória
+- NC: mortalidade de 50% a 12 meses com traqueostomia versus 10% restantes
+- indicação *neurológica* apontada como o maior fator independente de permanência em SMI
+- Cerca de 1/3 dos custos de gestão de SMI.
+:::
+
+## O problema de decisão
+
+Traqueostomia:
+1. O doente necessita?
+2. Quando?
+3. Como?
+
+
+## Vantagens específicas da Traqueostomia
+
+- **Metric:** Annual customer retention
+- **Period:** Last 12 months
+- **Limitation:** Cohort composition may differ.
+
+::: aside
+Note: Results depend on the customer cohort and measurement period.
+:::

@@ -1,0 +1,227 @@
+/*-- scss:defaults --*/
+
+$body-bg: #ffffff;
+$body-color: #202938;
+$link-color: #2457a7;
+
+$font-family-sans-serif: Arial, Helvetica, sans-serif;
+$presentation-font-size-root: 30px;
+$presentation-line-height: 1.25;
+
+/*-- scss:rules --*/
+
+/* ==================================================
+   SLIDE LAYOUT
+   ================================================== */
+
+/* Keep padding within each slide's dimensions */
+.reveal .slides section {
+  box-sizing: border-box;
+}
+
+/* Content slides:
+   extra top space separates content from the header */
+.reveal .slides section.slide:not(#title-slide):not(.stack) {
+  padding: 58px 48px 76px;
+  text-align: left;
+}
+
+/* Let Quarto handle title-slide centring */
+.reveal .slides section#title-slide {
+  padding: 0;
+  text-align: center;
+}
+
+/* ==================================================
+   CONTENT HEADINGS
+   ================================================== */
+
+.reveal h2 {
+  margin-bottom: 0.65em;
+  font-size: 1.45em;
+  line-height: 1.15;
+  font-weight: 650;
+  color: #202938;
+}
+
+/* ==================================================
+   TITLE SLIDE
+   ================================================== */
+
+/* Main title */
+.reveal #title-slide h1.title {
+  margin: 0 0 16px;
+  font-size: 2.25em;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #202938;
+}
+
+/* Subtitle */
+.reveal #title-slide .subtitle {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #596579;
+}
+
+/* Space between title group and presenter details */
+.reveal #title-slide .quarto-title-authors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+
+  margin: 52px 0 0;
+  padding: 0;
+}
+
+/* Individual author block */
+.reveal #title-slide .quarto-title-author {
+  width: auto;
+  max-width: 900px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Presenter name */
+.reveal #title-slide .quarto-title-author-name {
+  margin: 0 0 18px;
+  padding: 0;
+
+  font-size: 0.85em;
+  line-height: 1.3;
+  font-weight: 600;
+  color: #202938;
+}
+
+/* Affiliations */
+.reveal #title-slide .quarto-title-affiliation {
+  margin: 5px 0;
+  padding: 0;
+
+  font-size: 0.55em;
+  line-height: 1.45;
+  font-weight: 400;
+  color: #596579;
+}
+
+/* Prevent nested paragraphs from adding spacing */
+.reveal #title-slide .quarto-title-author-name p,
+.reveal #title-slide .quarto-title-affiliation p {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* ==================================================
+   AUTOMATIC FOOTNOTES
+   Retains the selectors from your original stylesheet
+   ================================================== */
+
+.reveal .slides section aside.footnotes,
+.reveal .slides section .footnotes {
+  position: absolute;
+  left: 48px;
+  right: 48px;
+  bottom: 38px;
+
+  width: auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 8px 0 0;
+
+  border-top: 1px solid #d8dee8;
+  font-size: 0.48em;
+  line-height: 1.25;
+  color: #596579;
+  text-align: left;
+}
+
+/* Compact automatic footnote lists */
+.reveal .slides section aside.footnotes ol,
+.reveal .slides section .footnotes ol {
+  margin: 0;
+  padding-left: 1.5em;
+}
+
+.reveal .slides section aside.footnotes li,
+.reveal .slides section .footnotes li {
+  margin: 0.15em 0;
+}
+
+.reveal .slides section .footnotes p {
+  margin: 0;
+}
+
+/* Style Quarto's aside-footnotes lists without
+   independently positioning every entry */
+.reveal .slides section .aside-footnotes {
+  line-height: 1.25;
+  color: #596579;
+}
+
+.reveal .slides section .aside-footnotes li {
+  margin: 0.15em 0;
+}
+
+.reveal .slides section .aside-footnotes p {
+  margin: 0;
+}
+
+/* ==================================================
+   EXPLANATORY ASIDES
+   ================================================== */
+
+.reveal .slide .aside {
+  margin-top: 1.5em;
+  padding-top: 8px;
+
+  border-top: 1px solid #d8dee8;
+  font-size: 0.48em;
+  line-height: 1.25;
+  color: #596579;
+}
+
+.reveal .slide .aside p {
+  margin: 0 0 0.3em;
+}
+
+/* ==================================================
+   MANUAL SOURCES
+   Use one .slide-sources block per slide
+   ================================================== */
+
+.reveal .slides section.slide .slide-sources {
+  position: absolute;
+  left: 48px;
+  right: 48px;
+  bottom: 38px;
+
+  width: auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 8px 0 0;
+
+  border-top: 1px solid #d8dee8;
+  font-size: 0.48em;
+  line-height: 1.25;
+  color: #596579;
+  text-align: left;
+}
+
+.reveal .slides section.slide .slide-sources ol {
+  margin: 0;
+  padding-left: 1.5em;
+}
+
+.reveal .slides section.slide .slide-sources li {
+  margin: 0.15em 0;
+}
+
+.reveal .slides section.slide .slide-sources p {
+  margin: 0;
+}
