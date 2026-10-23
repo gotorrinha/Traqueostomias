@@ -59,12 +59,17 @@
    - Grupo NW/0: pulmões "intactos", mas ausência de proteção de via aérea ou colaboração neurológica em SBT[^Dziewas]
    - Falência de Extubação (<48 a 72h): +++ *obstrução de VA*, tosse ineficaz, disfagia/disfunção de sensibilidade laríngea ou carga elevada de secreções[^medrinal]
      - Post-Extubation Respiratory Failure (PERF): re-intubação <7 dias[^shah]
+       - Insuficiência respiratória pós-extubação
        - +++ *fadiga respiratória*, carga elevada de secreções, ou *sobrecarga hídrica ± disfunção cardíaca*
    :::
 
 [^medrinal]: Medrinal et al. Annals of Intensive Care 2026. DOI: 10.1016/j.aicoj.2026.100045
 [^Dziewas]: Dziewas et al. Neurological Research and Practice 2025. DOI: 10.1186/s42466-025-00376-1
 [^shah]: Shah et al. Breathe 2024. DOI: 10.1183/20734735.0122-2024
+
+:::{.notes}
+- Falência de desmascarar défices latentes em endurance, reserva cardíaca ou carga de secreções.
+:::
 
 ## Morbi-mortalidade do desmame ventilatório[^shah]^,^[^Ghiani]^,^[^Alghamdi]^,^[^medrinal]^,^[^Dziewas]
 
@@ -97,17 +102,174 @@
 
 Traqueostomia:
 
-1. O doente necessita?
+**1. O doente *necessita*?**
+
+**2. Quando?**
+
+**3. Como?**
+
+
+## Indicações[^Alghamdi]^,^[^Dziewas]
+
+1. Ventilação mecânica (previsivelmente) prolongada (maioria)
+2. Falência de Extubação (precoce + tardia)
+3. Proteção de Via Aérea
+    3.1 Disfunção Neurológica (UCIP ~15% > UCIN ~45%)
+    3.2 Distorção Anatómica + outras
+
+[^Alghamdi]: Alghamdi et al. The Egyptian Journal of Bronchology 2026. DOI:10.1186/s43168-026-00521-7
+[^Dziewas]: Dziewas et al. Neurological Research and Practice 2025. DOI: 10.1186/s42466-025-00376-1
+
+## Para quê?
+
+- Redução de espaço morto e trabalho respiratório (WOB)
+  - Menos *espaço-morto*: redução em 30 a 50%[^amada]
+  - Menos resistência de via aérea:
+    - Maior calibre e menor comprimento
+    - Menor compromisso por compressão externa[^ghattas]
+
+[^amada]: Amada et al. British Journal of Hospital Medicine 2026. DOI: 10.31083/BJHM50155
+[^ghattas]: Ghattas et al. Journal of Thoracic Disease 2021. DOI: 10.21037/jtd-19-4121
+
+## Para quê?
+
+- Redução de espaço morto e trabalho respiratório (WOB)
+
+$$
+\Delta P \propto \frac{L}{r^4}
+$$
+
+```{python}
+#| echo: false
+#| warning: false
+#| fig-width: 10
+#| fig-height: 3.5
+#| out-width: 100%
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Fluxo constante: 30 L/min
+Q = 30 / 60000
+mu = 1.8e-5
+conv = 1 / 98.0665
+
+fig, ax = plt.subplots(1, 2, figsize=(10, 3.5))
+
+# Gráfico 1: comprimento de 2 a 30 cm
+L = np.linspace(2, 30, 200)
+r = 75 / 1000  # raio fixo: 75 mm
+
+P_L = 8 * mu * (L / 100) * Q / (np.pi * r**4) * conv
+
+ax[0].plot(L, P_L, color="#2878B5", linewidth=2)
+ax[0].set_title("Efeito do comprimento")
+ax[0].set_xlabel("Comprimento (cm)")
+ax[0].set_ylabel(r"$\Delta P$ (cmH$_2$O)")
+ax[0].grid(alpha=0.25)
+
+# Gráfico 2: raio de 5 a 10 cm
+radius = np.linspace(5, 10, 200)
+length = 0.15  # comprimento fixo: 15 cm
+
+P_r = 8 * mu * length * Q / (np.pi * (radius / 100)**4) * conv
+
+ax[1].plot(radius, P_r, color="#D95F02", linewidth=2)
+ax[1].set_title("Efeito do raio")
+ax[1].set_xlabel("Raio (cm)")
+ax[1].set_ylabel(r"$\Delta P$ (cmH$_2$O)")
+ax[1].grid(alpha=0.25)
+
+# Set y-axis limits for each graph
+ax[0].set_ylim(0, max(P_L) * 1.05)
+ax[1].set_ylim(0, max(P_r) * 1.05)
+
+plt.tight_layout()
+plt.show()
+```
+
+:::{.notes}
+Poiseuille’s Law
+:::
+
+## Para quê?
+
+- Redução de espaço morto e trabalho respiratório (WOB)
+
+:::{.incremental}
+- Otimização na gestão de S/A e Delirium
+  - Menor reatividade ao tubo &rarr; desmame de sedo-analgesia mais precoce[^Alghamdi]
+- Margem para reabilitação
+  - Retorno prococe de fonação (cânula fonatória ou *cuff* desinsuflado)[^amada] e mobilização precoce[^medrinal]
+  - Retorno precoce de deglutição (*cuff* e mobilidade laríngea)[^ghattas] &rarr; Efeito indireto por prevenção de delirium
+- Correta *toilette* brônquica: aspirações subglóticas &rarr; mais eficazes^3
+- Prevenção de trauma de CV e aritnóides &rarr; menos complicações anatómicas^1^
+:::
+
+[^Alghamdi]: Alghamdi et al. The Egyptian Journal of Bronchology 2026. DOI:10.1186/s43168-026-00521-7
+[^amada]: Amada et al. British Journal of Hospital Medicine 2026. DOI: 10.31083/BJHM50155
+[^medrinal]: Medrinal et al. Annals of Intensive Care 2026. DOI: 10.1016/j.aicoj.2026.100045
+[^ghattas]: Ghattas et al. Journal of Thoracic Disease 2021. DOI: 10.21037/jtd-19-4121
+
+## Para quê? E quando? &rarr; *TracMan Trial*[^tracman]
+
+:::{.incremental}
+- JAMA 2013
+- Reino Unido, 2004 a 2011
+- 70 UCIP + 2UCIP Cirurgia Cardíaca
+- 1032 doentes elegíveis &rarr; 889 analisados:
+  - <4 dias de VMI à data de seleção
+  - clinicamente com potencial de necessitar de >7 dias de VMI
+- Dois grupos randomizados: traqueostomias ≤4 dias *versus* >10 dias
+:::
+
+[^tracman]: Young et al. The TracMan Randomized Trial. JAMA 2013. DOI:10.1001/jama.2013.5154
+
+## Para quê? E quando? &rarr; *TracMan Trial*[^tracman]
+
+- 2004 a 2011, 889 analisados
+- Traqueostomias ≤4 dias *versus* >10 dias
+
+:::{.incremental}
+- Resultados:
+  - Mortalidade a 30 dias: ~31% em ambos, p>0.5
+    - Sem diferenças à alta de SMI, hospitalar, 12 e 24 meses
+  - LOS: semelhante.
+  - Dias livres de antibiótico: semelhante.
+  - **Duração de sedação (mediana): 5 *versus* 8 dias**, p<0.001
+:::
+
+[^tracman]: Young et al. The TracMan Randomized Trial. JAMA 2013. DOI:10.1001/jama.2013.5154
+
+## Para quê? E quando?
+
+*TracMan Trial*[^tracman]: o único RCT, resultados debatíveis
+
+:::{.incremental}
+   - Exclusão explícita de doentes neurocríticos
+     - *because our study centers indicated these patients [usually receive early tracheostomies]{.mark}*
+   - 53.7% (244/454) do grupo tardio **nunca** foi traqueostomizado
+     - 167 recuperaram espontaneamente &rarr; extubados &rarr; alta
+   - Análise de dias de antibiótico, sem análise de pneumonias associada a tubo
+:::
+
+[^tracman]: Young et al. The TracMan Randomized Trial. JAMA 2013. DOI:10.1001/jama.2013.5154
+
+:::{.notes}
+- Para um estudo que pretende saber se fazer mais precoce ou esperar um pouco mais tem benefício, parece uma grande oportunidade perdida, especialmente atendendo que...
+- Estrutura em "intend to treat"
+- Prova da sobre-estimativa em particular no doente não neurocrítico
+:::
+
+## O problema de decisão
+
+Traqueostomia:
+
+1. O doente *necessita*?
 2. Quando?
 3. Como?
 
 
-## Indicações
-
-- Ventilação mecânica previsivelmente prolongada (NC): >50% dos casos
-- Falência de Extubação ou insuficiência respiratória pós-extubação:
-- **Limitation:** Cohort composition may differ.
-
-::: aside
-Note: Results depend on the customer cohort and measurement period.
+:::{.incremental}
+4. Quando e como **parar**?
 :::
