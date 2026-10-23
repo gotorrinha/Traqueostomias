@@ -9,7 +9,7 @@
   <div class="custom-title-author">Gonçalo Torrinha, MD</div>
 
   <div class="custom-title-affiliations">
-  Serviço de Medicina Intensiva, Hospital de Braga  
+  Serviço de Medicina Intensiva, Hospital de Braga
   Escola de Medicina, Universidade do Minho
   </div>
 </div>
@@ -32,16 +32,19 @@
 - Dois grandes grupos de falência de Desmame:
 
   ::: {.incremental}
-  1. Falência Ventilatória
-  2. Falência de Via Aérea e de estímulo ventilatório
+  1. **Falência Ventilatória**
+  2. **Falência de Via Aérea e de estímulo ventilatório**
   :::
 
 ## Porque é que mantemos doentes ventilados?
 
-1. ...por Falência Ventilatória
+1. **...por Falência Ventilatória**
 
    ::: {.incremental}
-   - Grupos 2 e 3[^Ghiani]: associados a fadiga de músculos respiratórios, esforço respiratório aumentado e patologia sistémica. [^shah]
+   - Grupos 2 e 3[^Ghiani]; associados a:
+     - fadiga de músculos respiratórios,
+     - esforço respiratório aumentado
+     - patologia sistémica. [^shah]
    :::
 
 
@@ -50,16 +53,18 @@
 
 ## Porque é que mantemos doentes ventilados?
 
-2. ...por Falência de Via Aérea e de estímulo ventilatório
+2. **...por Falência de Via Aérea e de estímulo ventilatório**
 
    ::: {.incremental}
-   - Grupo NW/0: pulmões "intactos", mas ausência de proteção de via aérea ou colaboração neurológica em SBT [^Dziewas]
-   - **Falência de Extubação** (<48 a 72h): 14 a 18% das extubações planeadas, tipicamente no contexto de obstrução de VA, tosse ineficaz ou carga elevada de secreções [^medrinal]
-    - Falênci
+   - Grupo NW/0: pulmões "intactos", mas ausência de proteção de via aérea ou colaboração neurológica em SBT[^Dziewas]
+   - Falência de Extubação (<48 a 72h): +++ *obstrução de VA*, tosse ineficaz, disfagia/disfunção de sensibilidade laríngea ou carga elevada de secreções[^medrinal]
+     - Post-Extubation Respiratory Failure (PERF): re-intubação <7 dias[^shah]
+       - +++ *fadiga respiratória*, carga elevada de secreções, ou *sobrecarga hídrica ± disfunção cardíaca*
    :::
 
 [^medrinal]: Medrinal et al. Annals of Intensive Care 2026. DOI: 10.1016/j.aicoj.2026.100045
 [^Dziewas]: Dziewas et al. Neurological Research and Practice 2025. DOI: 10.1186/s42466-025-00376-1
+[^shah]: Shah et al. Breathe 2024. DOI: 10.1183/20734735.0122-2024
 
 ## Morbi-mortalidade do desmame ventilatório[^shah]^,^[^Ghiani]^,^[^Alghamdi]^,^[^medrinal]^,^[^Dziewas]
 
