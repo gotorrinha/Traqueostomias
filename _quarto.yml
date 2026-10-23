@@ -11,3 +11,5 @@ format:
     embed-resources: true
     center: false
     transition: none
+    resources:
+    - assets/**
