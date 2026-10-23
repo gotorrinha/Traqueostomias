@@ -1,13 +1,18 @@
----
-title: "Traqueostomias"
-subtitle: "em desmame ventilatório"
+## {.template-opening}
 
-author:
-  - name: "Gonçalo Torrinha, MD"
-    affiliations:
-      - name: "Serviço de Medicina Intensiva, Hospital de Braga"
-      - name: "Escola de Medicina, Universidade do Minho"
----
+## {.custom-title-slide}
+
+<div class="custom-title-block">
+  <div class="custom-title">Traqueostomias</div>
+  <div class="custom-subtitle">em desmame ventilatório</div>
+
+  <div class="custom-title-author">Gonçalo Torrinha, MD</div>
+
+  <div class="custom-title-affiliations">
+  Serviço de Medicina Intensiva, Hospital de Braga  
+  Escola de Medicina, Universidade do Minho
+  </div>
+</div>
 
 ## Porque é que mantemos doentes ventilados?
 
@@ -50,6 +55,7 @@ author:
    ::: {.incremental}
    - Grupo NW/0: pulmões "intactos", mas ausência de proteção de via aérea ou colaboração neurológica em SBT [^Dziewas]
    - **Falência de Extubação** (<48 a 72h): 14 a 18% das extubações planeadas, tipicamente no contexto de obstrução de VA, tosse ineficaz ou carga elevada de secreções [^medrinal]
+    - Falênci
    :::
 
 [^medrinal]: Medrinal et al. Annals of Intensive Care 2026. DOI: 10.1016/j.aicoj.2026.100045
@@ -85,15 +91,16 @@ author:
 ## O problema de decisão
 
 Traqueostomia:
+
 1. O doente necessita?
 2. Quando?
 3. Como?
 
 
-## Vantagens específicas da Traqueostomia
+## Indicações
 
-- **Metric:** Annual customer retention
-- **Period:** Last 12 months
+- Ventilação mecânica previsivelmente prolongada (NC): >50% dos casos
+- Falência de Extubação ou insuficiência respiratória pós-extubação:
 - **Limitation:** Cohort composition may differ.
 
 ::: aside

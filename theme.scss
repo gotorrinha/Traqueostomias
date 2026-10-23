@@ -1,35 +1,141 @@
+
 /*-- scss:defaults --*/
 
-$body-bg: #ffffff;
+$body-bg: #f8f6f2;
 $body-color: #202938;
-$link-color: #2457a7;
+$link-color: #236a58;
 
 $font-family-sans-serif: Arial, Helvetica, sans-serif;
-$presentation-font-size-root: 30px;
-$presentation-line-height: 1.25;
+$presentation-font-size-root: 26px;
+$presentation-line-height: 1.22;
 
 /*-- scss:rules --*/
 
 /* ==================================================
-   SLIDE LAYOUT
+   GENERAL SLIDE SETTINGS
    ================================================== */
 
-/* Keep padding within each slide's dimensions */
+.reveal {
+  background: #f8f6f2;
+  color: #202938;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .reveal .slides section {
   box-sizing: border-box;
 }
 
-/* Content slides:
-   extra top space separates content from the header */
-.reveal .slides section.slide:not(#title-slide):not(.stack) {
-  padding: 58px 48px 76px;
+/* ==================================================
+   SLIDE 1: OPENING ARTWORK ONLY
+   No title, subtitle, author, or CSS-generated text.
+   Keep the original image unchanged.
+   ================================================== */
+
+.reveal .slides section.template-opening {
+  padding: 0;
+  background-color: #f8f6f2;
+  background-image: url("template-title-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   text-align: left;
 }
 
-/* Let Quarto handle title-slide centring */
-.reveal .slides section#title-slide {
+/* Hide any empty heading generated for the blank slide. */
+.reveal .slides section.template-opening > h1,
+.reveal .slides section.template-opening > h2,
+.reveal .slides section.template-opening > h3 {
+  display: none;
+}
+
+/* ==================================================
+   SLIDE 2: PRESENTATION TITLE
+   Same horizontal content position as content slides,
+   but vertically centered.
+   ================================================== */
+
+.reveal .slides section.custom-title-slide {
   padding: 0;
-  text-align: center;
+  background-color: #f8f6f2;
+  background-image: url("template-content-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: left;
+}
+
+/* Center the title group vertically in the slide. */
+.reveal .slides section.custom-title-slide .custom-title-block {
+  position: absolute;
+  left: 300px;
+  right: 48px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Main presentation title: retain the current size
+   and conference accent color. */
+.reveal .custom-title {
+  margin: 0 0 16px;
+  padding: 0;
+  font-size: 2em;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #236a58;
+}
+
+/* Subtitle */
+.reveal .custom-subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #202938;
+}
+
+/* Presenter details */
+.reveal .custom-title-author {
+  margin: 42px 0 0;
+  padding: 0;
+  font-size: 0.85em;
+  line-height: 1.3;
+  font-weight: 600;
+  color: #236a58;
+}
+
+/* Affiliations */
+.reveal .custom-title-affiliations {
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 0.55em;
+  line-height: 1.45;
+  font-weight: 400;
+  color: #596579;
+}
+
+.reveal .custom-title-affiliations p {
+  display: block;
+  margin: 5px 0;
+}
+
+/* ==================================================
+   CONTENT SLIDES
+   Preserve existing slide structure and branding.
+   ================================================== */
+
+.reveal .slides section.slide:not(.template-opening):not(.custom-title-slide):not(.stack) {
+  padding: 58px 48px 76px 300px;
+  text-align: left;
+  background-color: #f8f6f2;
+  background-image: url("template-content-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 /* ==================================================
@@ -37,95 +143,74 @@ $presentation-line-height: 1.25;
    ================================================== */
 
 .reveal h2 {
-  margin-bottom: 0.65em;
-  font-size: 1.45em;
-  line-height: 1.15;
-  font-weight: 650;
-  color: #202938;
+  margin: 0 0 0.55em;
+  font-size: 1.42em;
+  line-height: 1.12;
+  font-weight: 700;
+  color: #236a58;
+  text-transform: none;
+}
+
+.reveal h3,
+.reveal h4 {
+  color: #236a58;
+  font-weight: 700;
+}
+
+.reveal p {
+  margin: 0 0 0.55em;
+}
+
+.reveal ul,
+.reveal ol {
+  margin-top: 0.25em;
+  margin-bottom: 0.45em;
+}
+
+.reveal li {
+  margin: 0.22em 0;
+}
+
+.reveal strong {
+  color: #1c5b4c;
 }
 
 /* ==================================================
-   TITLE SLIDE
+   TABLES
    ================================================== */
 
-/* Main title */
-.reveal #title-slide h1.title {
-  margin: 0 0 16px;
-  font-size: 2.25em;
-  line-height: 1.08;
+.reveal table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.76em;
+  line-height: 1.2;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.reveal table th {
+  color: #236a58;
   font-weight: 700;
-  letter-spacing: -0.025em;
-  color: #202938;
+  border-bottom: 2px solid #236a58;
 }
 
-/* Subtitle */
-.reveal #title-slide .subtitle {
-  margin: 0;
-  font-size: 1em;
-  line-height: 1.3;
-  font-weight: 400;
-  color: #596579;
+.reveal table td,
+.reveal table th {
+  padding: 0.36em 0.45em;
+  border-color: rgba(35, 106, 88, 0.22);
 }
 
-/* Space between title group and presenter details */
-.reveal #title-slide .quarto-title-authors {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-
-  margin: 52px 0 0;
-  padding: 0;
-}
-
-/* Individual author block */
-.reveal #title-slide .quarto-title-author {
-  width: auto;
-  max-width: 900px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-/* Presenter name */
-.reveal #title-slide .quarto-title-author-name {
-  margin: 0 0 18px;
-  padding: 0;
-
-  font-size: 0.85em;
-  line-height: 1.3;
-  font-weight: 600;
-  color: #202938;
-}
-
-/* Affiliations */
-.reveal #title-slide .quarto-title-affiliation {
-  margin: 5px 0;
-  padding: 0;
-
-  font-size: 0.55em;
-  line-height: 1.45;
-  font-weight: 400;
-  color: #596579;
-}
-
-/* Prevent nested paragraphs from adding spacing */
-.reveal #title-slide .quarto-title-author-name p,
-.reveal #title-slide .quarto-title-affiliation p {
-  margin: 0;
-  font-size: inherit;
-  line-height: inherit;
+.reveal table.striped tbody tr:nth-child(odd) {
+  background: rgba(35, 106, 88, 0.055);
 }
 
 /* ==================================================
    AUTOMATIC FOOTNOTES
-   Retains the selectors from your original stylesheet
    ================================================== */
 
 .reveal .slides section aside.footnotes,
 .reveal .slides section .footnotes {
   position: absolute;
-  left: 48px;
+  left: 300px;
   right: 48px;
   bottom: 38px;
 
@@ -134,14 +219,13 @@ $presentation-line-height: 1.25;
   margin: 0;
   padding: 8px 0 0;
 
-  border-top: 1px solid #d8dee8;
-  font-size: 0.48em;
-  line-height: 1.25;
+  border-top: 1px solid rgba(195, 154, 103, 0.8);
+  font-size: 0.43em;
+  line-height: 1.18;
   color: #596579;
   text-align: left;
 }
 
-/* Compact automatic footnote lists */
 .reveal .slides section aside.footnotes ol,
 .reveal .slides section .footnotes ol {
   margin: 0;
@@ -150,22 +234,24 @@ $presentation-line-height: 1.25;
 
 .reveal .slides section aside.footnotes li,
 .reveal .slides section .footnotes li {
-  margin: 0.15em 0;
+  margin: 0.08em 0;
 }
 
 .reveal .slides section .footnotes p {
   margin: 0;
 }
 
-/* Style Quarto's aside-footnotes lists without
-   independently positioning every entry */
+/* ==================================================
+   ASIDE FOOTNOTES
+   ================================================== */
+
 .reveal .slides section .aside-footnotes {
-  line-height: 1.25;
+  line-height: 1.18;
   color: #596579;
 }
 
 .reveal .slides section .aside-footnotes li {
-  margin: 0.15em 0;
+  margin: 0.08em 0;
 }
 
 .reveal .slides section .aside-footnotes p {
@@ -177,12 +263,12 @@ $presentation-line-height: 1.25;
    ================================================== */
 
 .reveal .slide .aside {
-  margin-top: 1.5em;
+  margin-top: 1.2em;
   padding-top: 8px;
 
-  border-top: 1px solid #d8dee8;
-  font-size: 0.48em;
-  line-height: 1.25;
+  border-top: 1px solid rgba(195, 154, 103, 0.8);
+  font-size: 0.58em;
+  line-height: 1.2;
   color: #596579;
 }
 
@@ -192,12 +278,11 @@ $presentation-line-height: 1.25;
 
 /* ==================================================
    MANUAL SOURCES
-   Use one .slide-sources block per slide
    ================================================== */
 
 .reveal .slides section.slide .slide-sources {
   position: absolute;
-  left: 48px;
+  left: 300px;
   right: 48px;
   bottom: 38px;
 
@@ -206,9 +291,9 @@ $presentation-line-height: 1.25;
   margin: 0;
   padding: 8px 0 0;
 
-  border-top: 1px solid #d8dee8;
-  font-size: 0.48em;
-  line-height: 1.25;
+  border-top: 1px solid rgba(195, 154, 103, 0.8);
+  font-size: 0.43em;
+  line-height: 1.18;
   color: #596579;
   text-align: left;
 }
@@ -219,7 +304,7 @@ $presentation-line-height: 1.25;
 }
 
 .reveal .slides section.slide .slide-sources li {
-  margin: 0.15em 0;
+  margin: 0.08em 0;
 }
 
 .reveal .slides section.slide .slide-sources p {
