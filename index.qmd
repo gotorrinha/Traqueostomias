@@ -10,6 +10,7 @@
 
   <div class="custom-title-affiliations">
   Serviço de Medicina Intensiva, Hospital de Braga
+
   Escola de Medicina, Universidade do Minho
   </div>
 </div>
@@ -65,7 +66,6 @@
 
 [^medrinal]: Medrinal et al. Annals of Intensive Care 2026. DOI: 10.1016/j.aicoj.2026.100045
 [^Dziewas]: Dziewas et al. Neurological Research and Practice 2025. DOI: 10.1186/s42466-025-00376-1
-[^shah]: Shah et al. Breathe 2024. DOI: 10.1183/20734735.0122-2024
 
 :::{.notes}
 - Falência de desmascarar défices latentes em endurance, reserva cardíaca ou carga de secreções.
@@ -189,7 +189,8 @@ plt.show()
 ```
 
 :::{.notes}
-Poiseuille’s Law
+- Poiseuille’s Law
+- uma palhinha, um centímetro de água
 :::
 
 ## Para quê?
@@ -216,7 +217,7 @@ Poiseuille’s Law
 :::{.incremental}
 - JAMA 2013
 - Reino Unido, 2004 a 2011
-- 70 UCIP + 2UCIP Cirurgia Cardíaca
+- 70 UCIP + 2 UCI Cirurgia Cardíaca
 - 1032 doentes elegíveis &rarr; 889 analisados:
   - <4 dias de VMI à data de seleção
   - clinicamente com potencial de necessitar de >7 dias de VMI
@@ -250,7 +251,7 @@ Poiseuille’s Law
      - *because our study centers indicated these patients [usually receive early tracheostomies]{.mark}*
    - 53.7% (244/454) do grupo tardio **nunca** foi traqueostomizado
      - 167 recuperaram espontaneamente &rarr; extubados &rarr; alta
-   - Análise de dias de antibiótico, sem análise de pneumonias associada a tubo
+   - Análise de dias de antibiótico, sem análise de pneumonias associada a intubação (PAI)
 :::
 
 [^tracman]: Young et al. The TracMan Randomized Trial. JAMA 2013. DOI:10.1001/jama.2013.5154
@@ -261,15 +262,157 @@ Poiseuille’s Law
 - Prova da sobre-estimativa em particular no doente não neurocrítico
 :::
 
+## Para quê? E quando? Nova Evidência.
+
+Quais são as conclusões? Quais são as orientações?
+
+:::{.incremental}
+1. Traqueostomias precoces previnem PAI?
+    - Boni et al. (2025): *Umbrella review* + nova meta-análise + análise sequencial (19 RCT, 3421 pacientes)[^boni]
+    - **Precoce previne PAI** (OR 0.65, 95% CI 0.47–0.89, p = 0.007) mas sem benefício claro na mortalidade. (OR 0.85, 95% CI 0.70–1.03, p = 0.09)
+    - Não há consenso na definição de precoce ou tardia &rarr; 7 dias (RCT) *vs* 10 dias (RS)
+      - Mas alterar ponto de corte não afetou significativamente resultados (4 *vs* 7 *vs* 10)
+      - 400k pacientes seriam necessários para confirmar impacto terapêutico real
+    - Fraca qualidade de evidência principalmente por critérios de diagnóstico muito variáveis
+:::
+
+:::{.notes}
+- Meta-regression in Boni et al. (2025) confirmed that neither neurological admission condition ($p = 0.372$) nor specific timing definition choice ($p = 0.33$) moderated patient survival2.
+:::
+
+[^boni]: Boni et al. BMJ Open Respir Res 2025. DOI: 10.1136/bmjresp-2024-002434
+
+## Para quê? E quando? Nova Evidência.
+
+Quais são as conclusões? Quais são as orientações?
+
+1. Não usar só por potencial protetor de PAI ou para reduzir tempo de VMI; **<4 dias sem redução de mortalidade evidente.** (Guidelines Francesas[^troi]^,^[^medrinal])
+
+:::{.incremental}
+2. Traqueostomias facilitam desmame ventilatório?
+    - Ghiani et al. (2026): coorte retrospetiva, 12 anos &rarr; 440 doentes sob VMI[^Ghiani]
+    - Precoce definida como <14 dias, *confirmado com <10 dias*
+    - Sem diferenças em % de VMI prolongada, falência de descanulação ou mortalidade
+      - Até em mecânica ventilatória e reserva funcional
+    - Diferença: **tempo total de VMI (40 vs. 51 dias)**
+      - *mas...* causado por atrasos em transferência para a Unidade
+:::
+
+:::{.notes}
+- unicentrico
+- Ponderado para fatores individuais dos doentes
+:::
+
+[^troi]: Troillet et al. Annals of Intensive Care 2018. DOI:10.1186/s13613-018-0381-y
+[^medrinal]: Medrinal et al. Annals of Intensive Care 2026. DOI: 10.1016/j.aicoj.2026.100045
+[^Ghiani]: Ghiani et sal. BMC Pulmonary Medicine 2026. DOI: 10.1186/s12890-026-04252-9
+
+## Para quê? E quando? Nova Evidência.
+
+Quais são as conclusões? Quais são as orientações?
+
+1. Não usar só por potencial protetor de PAI ou para reduzir tempo de VMI; **<4 dias sem redução de mortalidade evidente.**
+
+2. **Medidas de desmame controlado sempre**, independentemente do momento da intervenção. (Guidelines Francesas[^troi]^,^[^medrinal])
+
+:::{.incremental}
+3. Quando então?
+    - TracMan[^tracman] chamou a atenção do viés clínico
+    - Boni et al [^boni] não viu diferenças impacto de patologia neurológica ou outros diagnósticos em benefícios de mortalidade
+:::
+
+[^troi]: Troillet et al. Annals of Intensive Care 2018. DOI:10.1186/s13613-018-0381-y
+[^medrinal]: Medrinal et al. Annals of Intensive Care 2026. DOI: 10.1016/j.aicoj.2026.100045
+[^tracman]: Young et al. The TracMan Randomized Trial. JAMA 2013. DOI:10.1001/jama.2013.5154
+[^boni]: Boni et al. BMJ Open Respir Res 2025. DOI: 10.1136/bmjresp-2024-002434
+
+## Para quê? E quando? Nova Evidência.
+
+Quais são as conclusões? Quais são as orientações?
+
+1. Não usar só por potencial protetor de PAI ou para reduzir tempo de VMI; **<4 dias sem redução de mortalidade evidente.**
+
+2. **Medidas de desmame controlado sempre**, independentemente do momento da intervenção. (Guidelines Francesas[^troi]^,^[^medrinal])
+
+3. Quando então?
+
+:::{.incremental}
+- Indicações de peritos assentam em:
+  - **Nunca antes dos 4 dias**
+  - **Pensar em todos do desmame ventilatório Grupo 3**
+  - *Mais precoce* se **patologia neuromuscular adquirida reversível** (e.g. Guillain-Barré)
+:::
+
+[^troi]: Troillet et al. Annals of Intensive Care 2018. DOI:10.1186/s13613-018-0381-y
+[^medrinal]: Medrinal et al. Annals of Intensive Care 2026. DOI: 10.1016/j.aicoj.2026.100045
+
+## Como?
+
+:::{.incremental}
+- Opção 1: Percutânea
+- Opção 2: Cirúrgica
+- Opção 3: Híbrida
+:::
+
+## Como?
+
+:::{.incremental}
+- Opção 1: Percutânea[^troi]^,^[^locatello]^,^[^Alghamdi]^,^[^ghattas]
+  - Minimamente invasiva, técnica de Seldinger ± Broncoscópio; ± Ecógrafo
+  - Vantagens:
+    - Menos risco associado a transporte
+    - Taxas de infeção mais baixas (menor invasividade)
+    - Associada a menor LOS em UCI (22 vs. 25 dias) e hospitalar (45 vs. 47 dias)
+  - Limitações/Contraindicações:
+    - Dificuldade na palpação de anéis traqueais; Obesidade
+    - Imobilização cervical
+    - Massas cervicais; Coagulopatia (sem controlo)
+:::
+
+[^locatello]: Locatello et al. The Laryngoscope 2026. DOI: 10.1002/lary.70702
+
+## Como?
+
+- Opção 1: Percutânea
+
+:::{.incremental}
+- Opção 2: Cirúrgica [^locatello]^,^[^Alghamdi]^,^[^winchester]
+  - Disseção cirúrgica em bloco operatório, tipicamente por ORL
+  - Vantagens:
+    - Alterações Anatómicas
+    - Dificuldade técnica de realização de traqueostomia percutânea
+    - Elevado risco de procedimento
+  - Limitações/Contraindicações:
+    - Transporte de elevado risco
+    - Custos elevados de procedimento
+    - Atrasos de agendamento
+:::
+
+[^winchester]: Winchester et al. Head & Neck 2025. DOI: 10.1002/hed.27948
+
+## Como?
+
+- Opção 1: Percutânea
+- Opção 2: Cirúrgica
+
+:::{.incremental}
+- Opção 3: Híbrida[^locatello]^,^[^winchester]
+  - Abordagem cirúrgica, **na unidade**, por cirurgião e gestão anestésica pelo SMI
+  - Vantagens logísticas da técnica percutânea sem as limitações associadas
+    - Redução de atrasos de agendamento (84 vs 55 horas para primeira avaliação)
+    - Sem aumentar taxa de complicações cirúrgicas
+    - Redução de custos relatado entre 54 a 73%
+    - Menor tempo de procedimento (28.9 min vs 36.9 min)
+:::
+
+
 ## O problema de decisão
 
 Traqueostomia:
 
+:::{.incremental}
 1. O doente *necessita*?
 2. Quando?
 3. Como?
-
-
-:::{.incremental}
 4. Quando e como **parar**?
 :::
