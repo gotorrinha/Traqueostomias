@@ -9,9 +9,7 @@
   <div class="custom-title-author">Gonçalo Torrinha, MD</div>
 
   <div class="custom-title-affiliations">
-  Serviço de Medicina Intensiva, Hospital de Braga
-
-  Escola de Medicina, Universidade do Minho
+  Serviço de Medicina Intensiva, Hospital de Braga | Escola de Medicina, Universidade do Minho
   </div>
 </div>
 
@@ -114,8 +112,8 @@ Traqueostomia:
 1. Ventilação mecânica (previsivelmente) prolongada (maioria)
 2. Falência de Extubação (precoce + tardia)
 3. Proteção de Via Aérea
-    3.1 Disfunção Neurológica (UCIP ~15% > UCIN ~45%)
-    3.2 Distorção Anatómica + outras
+      i. Disfunção Neurológica (UCIP ~15% &rarr; UCIN ~45%)
+      ii. Distorção Anatómica + outras
 
 [^Alghamdi]: Alghamdi et al. The Egyptian Journal of Bronchology 2026. DOI:10.1186/s43168-026-00521-7
 [^Dziewas]: Dziewas et al. Neurological Research and Practice 2025. DOI: 10.1186/s42466-025-00376-1
@@ -294,7 +292,7 @@ Quais são as conclusões? Quais são as orientações?
     - Precoce definida como <14 dias, *confirmado com <10 dias*
     - Sem diferenças em % de VMI prolongada, falência de descanulação ou mortalidade
       - Até em mecânica ventilatória e reserva funcional
-    - Diferença: **tempo total de VMI (40 vs. 51 dias)**
+    - Diferença: **tempo total de VMI (40 vs 51 dias)**
       - *mas...* causado por atrasos em transferência para a Unidade
 :::
 
@@ -339,7 +337,7 @@ Quais são as conclusões? Quais são as orientações?
 :::{.incremental}
 - Indicações de peritos assentam em:
   - **Nunca antes dos 4 dias**
-  - **Pensar em todos do desmame ventilatório Grupo 3**
+  - **Pensar em todos os doentes do Grupo 3 de desmame ventilatório**
   - *Mais precoce* se **patologia neuromuscular adquirida reversível** (e.g. Guillain-Barré)
 :::
 
@@ -362,7 +360,7 @@ Quais são as conclusões? Quais são as orientações?
   - Vantagens:
     - Menos risco associado a transporte
     - Taxas de infeção mais baixas (menor invasividade)
-    - Associada a menor LOS em UCI (22 vs. 25 dias) e hospitalar (45 vs. 47 dias)
+    - Associada a menor LOS em UCI (22 vs 25 dias) e hospitalar (45 vs 47 dias)
   - Limitações/Contraindicações:
     - Dificuldade na palpação de anéis traqueais; Obesidade
     - Imobilização cervical
@@ -416,3 +414,151 @@ Traqueostomia:
 3. Como?
 4. Quando e como **parar**?
 :::
+
+## Desmame e descanulação
+
+:::{.incremental}
+- Duas grandes **referências da literatura**:
+  - Orientações Francesas de 2026[^medrinal]
+  - *Framework* de Descanulação Neurológica de 2025[^Dziewas]
+- Três grandes linhas de pensamento:
+  1. **Desmame ventilatório**
+  2. **Otimização da via aérea**
+  3. **Descanulação**
+:::
+
+## 1. Desmame Ventilatório no traqueostomizado
+
+:::{.incremental}
+- Privilegiar **desmame mais agressivo (peça em T ou nariz artificial)** versus pressão de suporte)
+  - 500 adultos ventilados >21 dias
+    - *31% tolerou 5 dias sem assistência* &rarr; excluídos
+    - Restantes estratificados: falência precoce (<12h) ou tardia.
+    - Dois grupos:
+      - D1-2 *12h on 12h off* &rarr; D3 a +5 *24h off*
+      - PS desmame q8h 2cmH~2~O até 6cmH~2~O
+    - **Desmame mais curto** (15 vs 19 dias) sem impacto na mortalidade
+      - Diferenças só no grupo tardio
+:::
+
+:::{.notes}
+- substimamos capacidade de desmame ventilatório
+:::
+
+## 2. Otimização de Via Aérea
+
+:::{.incremental}
+- Acompanhar desmame ventilatório com **cuff desinsuflado + válvula fonatória**
+  - Cuff vazio &rarr; restabelece pressão subglótica e elevação laríngea &rarr; reduz micro-  aspirações em cerca de 15%
+  - Válvula fonatória &rarr; direciona fluxo de ar &rarr; reduz aspiração em 50%
+  - 181 doentes traqueostomizados
+    - Patência supraglótica confirmada com oclusão da traqueostomia
+    - **Menos tempo até desmame** (3 dias vs 8 dias) e **menor taxa de infeções respiratórias** (20% vs 36%)
+    - Limitações:
+      - Excluídos doentes neurológicos e com disfagia severa
+      - Ar humificado a 69L/min no grupo de intervenção versus 55L/min no controlo
+:::
+
+## 2. Otimização de Via Aérea
+
+- Acompanhar desmame ventilatório com **cuff desinsuflado + válvula fonatória**
+
+:::{.incremental}
+- Troca de cânula programada **não está recomendada**
+- Considerar troca de cânula no contexto de downsizing para otimizar desmame ventilatório
+  - Três grandes estudos: Heliyon  2024, Manometry 2009, Wahla 2020
+    - Cânula interna aumenta resistência da via aérea em 2 a 3 vezes
+    - Trocas rotineiras <6 dias aumentam complicações sem benefício
+    - Comparação calendário vs troca individualizada
+      - *Redução de um tamanho se doente falhar obturação da cânula/válvula fonatória* (&uarr; trabalho respiratório ou P~IT~ > 10cmH~2~O)
+        - Melhor tolerância a trials (78% vs 95%)
+        - **Preditor independente de sucesso de descanulação**
+:::
+
+:::{.notes}
+taxas de lesão de estoma, falsos trajetos e complicações pulmonares sem reduzir biofilme bacteriano
+:::
+
+## 3. Descanulação
+
+:::{.incremental}
+- Quando considerar?
+  - Após desmame ventilatório, se sem desfagia major, **guiar pela frequência de aspirações** vs por testes de obturação 24h
+    - Espaço morto supra-estoma &rarr; *30% do trabalho respiratório* &rarr; *falência de desmame*
+    - 330 pacientes, multicêntrico
+      - Seleção: cuff desinsuflado, teste de 5 minutos sem estridor + teste de deglutição com 50cc de água
+      - Todos: alto fluxo + cânula aberta e cuff vazio; se ≤2 aspirações q8h em 24h:
+        a. Descanular imediatamente
+        b. Obturação 24h e vigiar dificuldade respiratória
+      - Grupo A: **menos tempo de desmame** (6 vs 13 dias), **menos infeções respiratórias**, **menos recanulações** (2.4% vs 5.6%), e **menor estadia hospitalar** (48 vs 62 dias)
+:::
+
+## 3. Descanulação
+
+:::{.incremental}
+- Como orientar?
+  - Abordagem multidisciplinar
+  - Ainda sem benefício claro *verificação endoscópica* em todos &rarr; testes clínicos parecem suficientes
+    - Reservar para:
+      - Intolerância à obturação
+      - Alterações inesperadas durante desmame
+      - Doentes neurocríticos
+:::
+
+## 3. Descanulação
+
+- Como orientar?
+    ![Standardized Endoscopic Swallowing Evaluation for Tracheostomy Decannulation (SESETD) protocol](assets/SESETD.png)
+
+## 3. Descanulação
+
+- Como orientar?
+  - Abordagem multidisciplinar
+  - Ainda sem benefício claro *verificação endoscópica* em todos &rarr; testes clínicos parecem suficientes
+    - Protocolo SESETD
+  - Bundles de intervenção parecem ser eficazes &rarr; algoritmo sugerido por Dziewas et al[^Dziewas]
+    - **A^2^BC Pathway**
+
+## 3. Descanulação
+
+- Como orientar?
+  - **A^2^BC Pathway** &rarr; Diagnóstico:
+  ![Diagnóstico](assets/diagnostic.png)
+
+## 3. Descanulação
+
+- Como orientar?
+  - **A^2^BC Pathway** &rarr; Abordagem:
+    ![Abordagem](assets/approach1.png)
+
+## 3. Descanulação
+
+- Como orientar?
+  - **A^2^BC Pathway** &rarr; Abordagem:
+    ![Abordagem](assets/approach2.png)
+
+## Mensagens para levar para casa
+
+:::{.incremental}
+1. **Indicação:** a traqueostomia serve o desmame de doentes do Grupo 3 (VM prolongada), a falência de extubação e a proteção de via aérea. Reduz espaço morto e resistência, e abre margem para reabilitação.
+
+2. **Timing:** nunca antes dos 4 dias. Não usar só para prevenir PAI ou encurtar a VMI. Antecipar na patologia neuromuscular reversível (e.g. Guillain-Barré).
+
+4. **Técnica:** a percutânea continua a ser a primeira linha. A híbrida surge na otimização da abordagem cirúrgica &rarr; feita na unidade reduz atrasos e custos.
+
+5. **Desmame:** Privilegiar a peça em T ou o nariz artificial em vez da pressão de suporte.
+
+6. **Via aérea:** ser agressivo no desmame parece paradoxal mas permite rapidez na proteção independente de via aérea.
+
+7. **Descanulação:** guiar pela frequência de aspirações. Seguir protocolos &uarr; Qualidade e Reprodutibilidade
+:::
+
+##
+
+<div class="custom-title-block">
+  <div class="custom-title">Obrigado</div>
+
+  <div class="custom-title-affiliations">
+  Gonçalo Torrinha, MD, goncalo.torrinha@ulsb.min-saude.pt
+  </div>
+</div>
