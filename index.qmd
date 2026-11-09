@@ -388,7 +388,7 @@ Traqueostomia:
 :::{.incremental}
 - Troca de cânula programada **não está recomendada**
 - Considerar troca de cânula no contexto de downsizing para otimizar desmame ventilatório
-  - Três grandes estudos: Heliyon  2024, Manometry 2009, Wahla 2020
+  - Três grandes estudos: Heliyon 2024, Manometry 2009, Wahla 2020
     - Cânula interna aumenta resistência da via aérea em 2 a 3 vezes
     - Trocas rotineiras <6 dias aumentam complicações sem benefício
     - Comparação calendário vs troca individualizada
